@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MER1101</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Music Emotion Dataset: MER1101 datase</h1>
+    </div>
+    <div class="main">
+      <div class="block">
+        <span class="title"><h2>Introduction</h2></span>
+        <span class="intro_content_1">
+          The MER1101 Music Emotion Dataset is a dataset established to explore the relationship between music and human emotion. 
+          It is based on Russell's valence-arousal emotion model. It contains 1101 music snippets gathered from the internet, with each ranging in duration from 16.5 seconds to 125.5 seconds.
+        </span>
+        <br>
+        <span class="intro_content_2">
+          Every song in the dataset has been annotated by three music experts and ten college students.
+          The annotators listened to the entire song before starting with the annotation, to get familiar with the music and to reduce the reaction time lag. 
+          The workers were only payed the full fee after their work was reviewed and appeared to be of high quality.
+        </span>
+      </div>
+      <div class="block">
+        <span class="title"><h2>Advantage</h2></span>
+        <ul>
+          <li>The dataset contains more genres (16 genres), including pop, DJ dance music, Chinese style, electronic, hip-hop, rock, folk, metal, reggae, light music, blues, jazz, classical, country, R&B, unknown, a total of 16 genres.</li>
+          <li>It contains richer language, meeting the ratio of nearly 5:3:1:1 for Chinese, English, Japanese and Korean, and other languages.</li>
+          <li>The samples in our dataset distribute more balance in the emotional quadrants and there are no more than three songs by the same artist in each V-A quadrant.</li>
+          <li>The volume of our dataset is larger than the current music datasets.</li>
+        </ul>
+        <img src="./picture/2.png"></img>
+      </div>
+      <div class="block">
+        <span class="title"><h2>Annotation consistency</h2></span>
+        <span class="ann_content">
+          Consistency is measured according to Cronbach's α used in the DEAM dataset.
+        </span>
+        <img class ="con_pic" src="./picture/5.png"></img>
+        <span class="ann_content">
+          Finally, take the average of the calculation results of each song (values less than 0 are calculated as 0) as the result, and calculate the result as shown in the table below:
+        </span>
+        <img src="./picture/1.png"></img>
+      </div>
+      <div class="block">
+        <span class="title"><h2>Sentiment distribution</h2></span>
+        <h3 class="little_title">The number of distributions in each quadrant of the labeled data</h3>
+        <img src="./picture/3.png"></img>
+        <h3 class="little_title">Quadrant distribution plot of labeled data</h3>
+        <img src="./picture/4.png" class="pircture_4"></img>
+      </div>
+      <div class="block">
+        <span class="title"><h2>Example of dataset metadata</h2></span>
+        <img src="./picture/6.png"></img>
+      </div>
+    </div>
+    </div>
+  </div>
+  <style>
+    html, body {
+      margin: 0;
+    }
+    .container{
+      height: calc(100vh);
+    }
+    .header{
+      font-size: 1.8vh;
+      color: #333;
+      text-align: center;
+    }
+    .block {
+      font-size: 1.6vh;
+      margin-top: 3vh;
+      margin-left: 25%;
+      margin-right: 25%;
+      line-height: 2.5vh;
+      text-align: justify; 
+    }
+    .intro_content_2 {
+      display: block;
+      padding-top: 1.5vh;
+    }
+    li {
+      padding-top: 1vh;
+    }
+    .title {
+      text-align: center;
+    }
+    .little_title {
+      text-align: center;
+    }
+    img{
+      width: 100% ;
+    }
+    .pircture_4{
+      width: 60%;
+      margin-left: 20%;
+    }
+    .ann_content{
+      display: block;
+    }
+    .con_pic{
+      width: 30%;
+      margin-left: 35%;
+    }
+
+  </style>
+</body>
+</html>
