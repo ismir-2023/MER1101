@@ -15,8 +15,8 @@
       <div class="block">
         <span class="title"><h2>Introduction</h2></span>
         <span class="intro_content_1">
-          The MER1101 Music Emotion Dataset is a dataset established to explore the relationship between music and human emotion. 
-          It is based on Russell's valence-arousal emotion model. It contains 1101 music snippets gathered from the internet, with each ranging in duration from 16.5 seconds to 125.5 seconds.
+          Music Emotion Recognition (MER) has recently received considerable attention. We developed the MER1101 Music Emotion Dataset to support the MER research requiring large music content libraries. It is a dataset that explores the relationship between music and human emotion.   
+          It is based on Russell's valence-arousal emotion model and contains 1101 music audio gathered from the internet, each ranging from 16.5 seconds to 125.5 seconds.
         </span>
         <br>
         <span class="intro_content_2">
@@ -56,28 +56,29 @@
       <div class="block">
         <span class="title"><h2>Example of dataset</h2></span>
         <div class="music">
-          <h3 class="little_title">消愁</h3>
-          <div class="audio">
+            <h3>消愁</h3>
             <audio loop="loop" controls="controls">
             <source src="music/054942132450490aa96d6cdba501a7b0.wav" type="audio/mp3"></source></audio>
-          </div>
-          <img src="./picture/m_1.png" class="music_picture"></img>
         </div>
         <div class="music">
-          <h3 class="little_title">Sleep On It</h3>
-          <div class="audio">
+          <h3>Sleep On It</h3>
             <audio loop="loop" controls="controls">
             <source src="music/0749341be52d4b438a1a9a4d99e7655a.wav" type="audio/mp3"></source></audio>
-          </div>
-          <img src="./picture/m_2.png" class="music_picture"></img>
+        <div class="music">
+          <h3>Bad</h3>
+            <audio loop="loop" controls="controls">
+            <source src="music/0d3f78688a914b77b0ad202c52df12d7.wav" type="audio/mp3"></source></audio>
         </div>
         <div class="music">
-          <h3 class="little_title">Bad</h3>
-          <div class="audio">
+          <h3>眠る猫</h3>
             <audio loop="loop" controls="controls">
-            <source src="music/182a13c2fa6d43fda709d5baeba6b517.wav" type="audio/mp3"></source></audio>
+            <source src="music/252701a93f904c629b92edd030aed40a.wav" type="audio/mp3"></source></audio>
+        </div>
+        <div class="music">
+          <h3 class="little_title">The emotional curves of the above song</h3>
+          <div class="audio">
+            <img src="./picture/V-A.png" class="pircture_VA"></img>
           </div>
-          <img src="./picture/m_3.png" class="music_picture"></img>
         </div>
       </div>
     </div>
@@ -139,6 +140,9 @@
     .music_picture {
       width: 70%;
       margin-left: 15%;
+    }
+    .music {
+      text-align: center;
     }
   </style>
 </body>
